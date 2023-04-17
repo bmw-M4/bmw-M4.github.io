@@ -1,0 +1,187 @@
+body{
+    color: gold;
+}
+
+#group_1{
+    color: darkgreen;
+}
+
+#lista_u{
+    color: magenta;
+}
+
+#lista_item1{
+    color: red;
+}
+#lista_item2{
+    color: yellow;
+}
+#lista_item3{
+    color: green;
+}
+#lista_item4{
+    color: blue;
+}
+#link_1{text-decoration: overline;}
+#link_2{text-decoration: none;}
+#link_3{text-decoration: line-through;}
+#link_4{text-decoration: underline line-through;}
+#link_5{text-decoration: underline;}
+#c1_0{ background-color: rgb(255, 0, 0);}
+#c2_0{ background-color: rgb(255,64,0);}
+#c3_0{ background-color: rgb(255,128,0);}
+#c4_0{ background-color: rgb(255,191,0);}
+
+#c1_1{ background-color: rgb(255,255,0);}
+#c2_1{ background-color: rgb(191,255,0);}
+#c3_1{ background-color: rgb(128,255,0);}
+#c4_1{ background-color: rgb(64,255,0);}
+
+#c1_2{ background-color: rgb(0,255,0); }
+#c2_2{ background-color: rgb(0,255,64);}
+#c3_2{ background-color: rgb(0,255,128); }
+#c4_2{ background-color: rgb(0,255,191);}
+
+#c1_3{ background-color: rgb(0,255,255); }
+#c2_3{ background-color: rgb(0,191,255); }
+#c3_3{ background-color: rgb(0,128,255); }
+#c4_3{ background-color: rgb(0,64,255); } 
+
+#c1_4{ background-color: rgb(0,0,255); }
+#c2_4{ background-color: rgb(64,0,255); }
+#c3_4{ background-color: rgb(128,0,255); }
+#c4_4{ background-color: rgb(191,0,255); } 
+
+#c1_5{ background-color: rgb(255,0,255);  }
+#c2_5{ background-color: rgb(255,0,191);  }
+#c3_5{ background-color: rgb(255,0,128);  }
+#c4_5{ background-color: rgb(255,0,64);  } 
+
+p {
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+}
+#ParrafoEspecial {
+  background-color: darkblue;
+  color: white;
+  text-transform: uppercase;
+  line-height: 2;
+  
+}
+#cuadro{
+  border: 5px solid black;
+}
+#cuadro th, #cuadro td {
+  border: 1px dotted gray;
+}
+.alterno {
+  background-color: gray;
+}
+td:hover{
+  background-color: lightgreen;
+}
+#cuadro td:hover, #cuadro th:hover {
+   background-color: lightgreen;
+}
+h1:hover, h2:hover, h3:hover{
+  color: rgb(0, 0,0);
+  background-color:darkslategray;
+  text-transform: uppercase;
+  text-shadow: #15d12b 5px  0px 1px;
+  font-size: small;
+}
+#p_1{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: none;
+}
+#p_2{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: overline;
+}
+#p_3{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: line-through;
+}
+#p_4{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: underline;
+}
+#p_5{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: none;
+}
+#p_6{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: overline;
+}
+#p_7{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: line-through;
+}
+#p_8{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: underline;
+}
+#p_9{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: none;
+}
+#p_10{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: overline;
+}
+#p_11{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: line-through;
+}
+#p_12{ 
+  background-color: black;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: underline;
+}
+#p_13{ 
+  background-color: darkblue;
+  color: lime;
+  margin: 25px 50px;
+  text-align: justify;
+  text-indent: 10px;
+  text-decoration: overline;
+}
+

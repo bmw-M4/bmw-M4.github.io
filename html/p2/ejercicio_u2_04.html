@@ -1,25 +1,37 @@
-<!Doctype html>
+<!DOCTYPE html>
+<!--
+    Nombre:García Torres Luis Felipe
+    Materia: Programacion web 1
+    Fecha: 21/03/23
+    Descripcion: Etiquetas para mapa de imagenes
+-->
 <html lang="es">
     <head>
-        <title>Unidad 2 - Ejercicio 4</title>
+        <title>Unidad 02 - ejercicio 04</title>
         <meta charset="utf-8">
         <meta name="author" content="García Torres Luis Felipe">
-        <meta name="revised" content="">
-        <meta name="description" content="h1-16, p, br">
+        <meta name="revised" content="Martes 21 de Marzo de 2023">
+        <meta name="description" content=" img, map, area">
     </head>
     <body>
         <hgroup>
             <h1>Mapa de imagenes</h1>
-            <a href="https://www.google.com.mx/" target="_blank">
-                <h2>Imagen con un unico enlace</h2>
-                <img src="https://th.bing.com/th/id/R.3572cf57604578c5f3024cfaaa67ddfd?rik=qK6OYtLuznp%2bDw&pid=ImgRaw&r=0" alt="redes_sociales">
+            <h2>Imagen con un link</h2>
+            <a href="https://www.google.com/" target="_blank">
+                <img src="https://proximahost.es/blog/wp-content/uploads/2021/06/Redes-sociales.jpg" alt="Redes sociales">
             </a>
             <h2>Imagen con multiples enlaces</h2>
-            <img src="https://th.bing.com/th/id/R.3572cf57604578c5f3024cfaaa67ddfd?rik=qK6OYtLuznp%2bDw&pid=ImgRaw&r=0" alt="redes_sociales">
+            <img src="https://proximahost.es/blog/wp-content/uploads/2021/06/Redes-sociales.jpg" usemap="#image-map">
             <map name="image-map">
-                <area target="_blank" alt="Facebook" title="Facebook" href="https://www.facebook.com/" coords="276,92,330,180" shape="rect">
-                <area target="_blank" alt="Instagram" title="Instagram" href="https://www.instagram.com/" coords="384,70,515,200" shape="rect">
-                <area target="_blank" alt="YouTube" title="YouTube" href="https://www.youtube.com/" coords="558,108,637,165" shape="rect">
+                <area target="_blank" alt="Facebook" title="Click aqui para entrar a Facebook" href="https://es-la.facebook.com/" coords="367,202,237,70" shape="rect">
+                <area target="_blank" alt="Instagram" title="Click aqui para entrar a Instagram" href="https://www.instagram.com/" coords="386,70,516,201" shape="rect">
+                <area target="_blank" alt="Youtube" title="Click aqui para entrar a Youtube" href="https://www.youtube.com/" coords="534,71,665,202" shape="rect">
+                <area target="_blank" alt="Twitter" title="Click aqui para entrar a Twitter" href="https://twitter.com/?lang=es" coords="301,303,62" shape="circle">
+                <area target="_blank" alt="TikTok" title="Click aqui para entrar a TikTok" href="https://www.tiktok.com/es/" coords="449,303,64" shape="circle">
+                <area target="_blank" alt="Linkedin" title="Click aqui para entrar a Linkedin" href="https://mx.linkedin.com/" coords="599,303,63" shape="circle">
+                <area target="_blank" alt="Snapchat" title="Click aqui para entrar a Snapchat" href="https://www.snapchat.com/" coords="282,433,313,428,319,444,320,457,329,461,328,471,329,492,326,477,338,487,302,502,264,488,274,462,274,464" shape="poly">
+                <area target="_blank" alt="WhatsApp" title="Click aqui para entrar a WhatsApp" href="https://www.whatsapp.com/?lang=es" coords="417,497,417,464,420,445,436,431,455,426,473,434,483,446,488,466,478,487,461,497" shape="poly">
+                <area target="_blank" alt="Pinterest" title="Click aqui para entrar a Pinterest" href="https://www.pinterest.com.mx/" coords="582,500,568,464,571,445,580,434,593,429,607,430,619,434,626,446,626,463,618,474" shape="poly">
             </map>
         </hgroup>
     </body>

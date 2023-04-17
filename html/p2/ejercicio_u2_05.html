@@ -1,157 +1,234 @@
 <!DOCTYPE html>
-<html>
+<!--
+    Nombre:García Torres Luis Felipe
+    Materia: Programacion web 1
+    Fecha: 30/03/23
+    Descripcion:Estilos CSS
+-->
+<html lang="es">
     <head>
-        <title>Unidad 02 - ejercicio 05</title>
+        <title>Unidad 02- ejercicio 05</title>
         <meta charset="utf-8">
-    <meta name="author" content="García Torres Luis Felipe">
-    <meta name="revised" content="">
-    <meta name="description" content="">  
-    <style>
-        body{
-                
-        }
-        p{
-            background-color: black;
-            margin: 25px 50px;
-        }
-    </style>  
+        <meta name="author" content="García Torres Luis Felipe">
+        <meta name="revised" content="Jueves 30 de Marzo del 2023">
+        <meta name="description" content="Estilo en etiquetas y encabezado (style)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">        
+        <style type="text/css">
+            p {
+              background-color: black;
+              margin: 25px 50px;
+              text-align: justify;
+              text-indent: 10px;
+            }
+            #ParrafoEspecial {
+              background-color: darkblue;
+              color: white;
+              text-transform: uppercase;
+              line-height: 2;
+            }
+            #cuadro{
+              border: 5px solid black;
+            }
+            #cuadro th, #cuadro td {
+              border: 1px dotted gray;
+            }
+            .alterno {
+              background-color: gray;
+            }
+            td:hover{
+              background-color: lightgreen;
+            }
+           #cuadro td:hover, #cuadro th:hover {
+               background-color: lightgreen;
+            }
+            h1:hover, h2:hover, h3:hover{
+              color: rgb(0, 0,0);
+              background-color:darkslategray;
+              text-transform: uppercase;
+              text-shadow: #15d12b 5px  0px 1px;
+              font-size: small;
+            }
+            ul li:first-child{
+              background-color: blueviolet;
+              color: blue;
+            }
+            ul li:nth-child(2){
+              background-color: black;
+              color: white;
+            }
+            ul li:last-child{
+              background-color: lime;
+              color: black;
+            }
+        </style>
     </head>
-    <body style="color: gold;">
+    <body style="color: gold;"> 
         <hgroup style="color: darkgreen;">
             <h1>CSS</h1>
-            <h2>Estilo en etiquetas</h2>
-            <ul style="color: magenta;">
-                <li style="color: red;"><a href="#" style="text-decoration: overline;">Inicio</a></li>
-                <li style="color: blue;"><a href="#" style="text-decoration: none;">Alumnos</a></li>
-                <li style="color: yellow;"><a href="#" style="text-decoration: line-through;">Aspirantes</a></li>
-                <li style="color: green;"><a href="#" style="text-decoration: underline line-through;">Docentes</a></li>
-                <li>Administrativos</li>
+            <h2>Estilo en linea</h2>
+            <ul style="color: magenta; text-decoration: none; list-style-image: url(Flecha.png);">
+                <li style="color: red;"><a href=#; style="text-decoration: overline;">Inicio</a></li>
+                <li style="color: yellow;"><a href=#;>Alumnos</a></li>
+                <li style="color: green;"><a href=#; style="text-decoration: underline;">Aspirantes</a></li>
+                <li style="color: blue;"><a href=#; style="text-decoration: none;">Docentes</a></li>
+                <li><a href=#; style="text-decoration: line-through;">Administracion</a></li>
             </ul>
         </hgroup>
         <hgroup>
-            <h2>Estilo en encabezado</h2>
-            <p style="background-color: darkblue; color: white; text-decoration: none;""text-decoration: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit malesuada blandit. Maecenas in magna eu dui ornare ullamcorper vitae sed velit. Suspendisse potenti. Cras egestas, justo eget cursus semper, elit lectus lobortis tellus, et laoreet eros metus id lacus. Donec ac pharetra risus. Donec ultricies, erat non placerat varius, magna elit faucibus mi, eu eleifend enim dui ut leo. Vestibulum laoreet quam sed mollis lobortis.</p>
-            <p style="text-decoration: overline;">Quisque id neque nunc. Sed finibus ex quis nibh ultricies, ac dapibus dolor aliquam. Quisque mattis est vitae leo lacinia tincidunt. Proin consequat luctus urna nec venenatis. Fusce quam velit, faucibus quis consequat ac, porta non risus. Morbi orci est, tempor in elit nec, iaculis pretium diam. Donec sit amet tellus lobortis, ultrices elit blandit, ultricies mi. Cras erat justo, vestibulum in ex ac, luctus pulvinar tellus.</p>
-            <p style="text-decoration: line-through;">Mauris semper tellus id nulla tempor, nec imperdiet augue ultrices. Fusce pharetra arcu vel augue semper, et laoreet nisi imperdiet. Donec eu blandit sem, a iaculis ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In nec tellus in leo suscipit imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean et elementum mauris. In ut ex eget elit sagittis mollis in in urna. Fusce non dignissim augue, in blandit mi. Sed faucibus nisl quis tincidunt aliquam. Nullam bibendum vitae tortor sit amet tempor.</p>
-            <p style="text-decoration: underline;">Donec lorem nibh, vehicula ac facilisis vitae, facilisis quis lacus. Mauris eleifend ligula in tortor suscipit, in vehicula ipsum tincidunt. Sed finibus luctus leo, non dignissim massa luctus id. Sed sed quam nec nisl facilisis venenatis id sed nisl. Curabitur id ullamcorper nulla. In hac habitasse platea dictumst. Aliquam at sapien sed lorem maximus eleifend. Vestibulum purus nulla, interdum vel porttitor eget, venenatis at magna. Vivamus nunc sapien, tempor eu eleifend auctor, iaculis in leo. Vestibulum porttitor, velit in luctus commodo, quam ipsum euismod felis, ut vestibulum magna nibh id risus.</p>
+            <h1>CSS</h1>
+            <h2>Estilo en encabezado</h2>         
+               <p id="ParrafoEspecial" style="text-decoration: line-through; text-align: center;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elit magna, tincidunt in posuere quis, euismod ut dui.</p>
+               <p style="text-decoration: line-through;">Suspendisse ornare ex eget fringilla fermentum. Vestibulum semper urna at pharetra vehicula. Aenean sed lorem nec augue consequat varius.</p>
+               <p style="text-decoration: overline;">In at metus vel justo tempus rhoncus. Donec tempor sed enim vel consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               <p style="text-decoration: none;">Donec lectus ante, ultricies non lacinia quis, posuere ut purus. Suspendisse potenti. Ut mollis ante in elit accumsan, et sagittis neque suscipit. Aliquam non lectus augue. Praesent in elementum nulla. Curabitur sem sem, porttitor congue ultricies a, varius a nulla.</p> 
+               <p style="text-decoration: underline;">Cras auctor velit vitae euismod dignissim. In dapibus dignissim nibh, finibus iaculis est condimentum eu. Phasellus vitae felis ultrices, mollis nulla non, semper nisl.</p>
+               <p style="text-decoration: underline;"> Cras ut consectetur enim. Nunc et nisi laoreet, tempor libero non, commodo urna. Sed dignissim augue ligula, ac accumsan sapien posuere a. </p>
+               <p style="text-decoration: none;">Pellentesque nec cursus nisi. Praesent aliquet imperdiet facilisis. Ut luctus nulla leo, vitae iaculis magna imperdiet sit amet. Sed eu nisl orci. Duis sed lacus ligula. Vestibulum at iaculis nibh. Etiam tristique interdum nulla ornare molestie.</p> 
+               <p style="text-decoration: overline;">Cras a urna lacus. Nunc ultrices cursus mauris sed convallis. Mauris bibendum massa eu ex vulputate vestibulum.</p>
+               <p style="text-decoration: overline;"> Nulla pharetra dignissim est, eu lacinia nulla. Praesent sit amet libero at tortor dignissim accumsan in at dolor.</p>
+               <p style="text-decoration: line-through;">Donec pulvinar est eget elit ullamcorper interdum. Pellentesque volutpat tortor tellus, a laoreet urna sollicitudin a.</p>
+               <p style="text-decoration: none;">Nulla ornare, diam a ultrices ultrices, nibh elit iaculis ex, vel tempus nisi ante fermentum quam.</p>
+               <p style="text-decoration: none;"> In semper lacinia libero quis laoreet. Aliquam vehicula eget ipsum vitae congue. Nunc dictum ullamcorper feugiat.</p>                     
+               <p style="text-decoration: underline;"> Suspendisse maximus neque vel condimentum laoreet. Mauris finibus enim nec erat porta finibus.</p>
+               <p style="color:lime;  background-color:darkblue; text-decoration:overline;"> Donec maximus elit vitae commodo scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque pulvinar purus turpis, quis iaculis risus ultrices at.</p>
         </hgroup>
         <hgroup>
-            <h2>Estilo con selectores</h2>
-            <table>
-                <tr><th>&nbsp;</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr>
-                <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
-            </table>
-            <table>
+            <h2>Estilos con selectores</h2>
+            <table id="cuadro">
+                <thead>
+                  <tr>
+                    <th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th>
+                  </tr>
+                </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td>A</td>
-                        <td>B</td>
-                        <td>C</td>
-                        <td>D</td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                  <tr class="alterno"> 
+                    <td>1</td><td ></td><td></td><td></td><td></td><td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td><td></td><td></td><td></td> <td></td> <td></td>
+                  </tr>
+                  <tr class="alterno">
+                    <td>3</td> <td></td><td></td><td></td><td></td><td></td>
+                  </tr>
+                  <tr>
+                    <td>4</td><td></td><td></td><td></td><td></td><td></td>
+                  </tr>
+                  <tr class="alterno">
+                    <td>5</td><td></td><td></td><td></td><td></td><td></td>
+                  </tr>
                 </tbody>
-            </table>
+                </table>
+                <table border="5">
+                  <thead>
+                    <tr>
+                      <th>&nbsp;</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr> 
+                      <td>1</td><td ></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>2</td><td></td><td></td><td></td> <td></td> <td></td>
+                    </tr>
+                    <tr>
+                      <td>3</td> <td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                      <td>4</td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr >
+                      <td>5</td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                  </tbody>
+                  </table>
         </hgroup>
-        <hgroup><style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-           
-            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-            .tg .tg-0lax{text-align:left;vertical-align:top}
-            </style>
-            <table class="tg">
-            <thead>
+        <hgroup>
+          <h1>Ejercicio tabla </h1>
+          <table border="5px" id="tabla2">
             <tr>
-                <th colspan="4">Cuadro de colores</th>
+              <th></th>
+              <th>Rojo</th>
+              <th>Verde</th>
+              <th>Azul</th>
             </tr>
+            <tr>
+              <td>32</td><td style="background-color: rgb(32, 0, 0);"></td><td style="background-color: rgb(0, 32, 0);"></td><td style="background-color: rgb(0, 0,32);"></td>
+            </tr>
+            <tr>
+              <td>64</td><td style="background-color: rgb(64, 0, 0);"></td><td style="background-color: rgb(0, 64, 0);"></td><td style="background-color: rgb(0, 0, 64);"></td>
+            </tr>
+            <tr>
+              <td>128</td><td style="background-color: rgb(128, 0, 0);"></td><td style="background-color: rgb(0, 128, 0);"></td><td style="background-color: rgb(0, 0, 128);"></td>
+            </tr>
+            <tr>
+              <td>192</td><td style="background-color: rgb(192, 0, 0);"></td><td style="background-color: rgb(0, 192, 0);"></td><td style="background-color: rgb(0, 0, 192);"></td>
+            </tr>
+            <tr>
+              <td>224</td><td style="background-color: rgb(224, 0, 0);"></td><td style="background-color: rgb(0, 224, 0);"></td><td style="background-color: rgb(0, 0, 224);"></td>
+            </tr>
+          </table>
+        </hgroup>
+        <hgroup>
+          <h2>Colores</h2>
+          <table style="color: black;">
+            <thead>
+              <tr>
+                <td colspan="4" align="center" > Tabla de colores </td>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(255, 0, 0);">0 rgb(255,0,0)</td>
+                <td style="background-color: rgb(255,64,0);">15 rgb(255,64,0)</td>
+                <td style="background-color: rgb(255,128,0);">30 rgb(255,128,0)</td>
+                <td style="background-color: rgb(255,191,0);">45 rgb(255,191,0)</td>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-                <th class="tg-0pky">0º rgb(255,0,0)</th>
-                <th class="tg-0pky">15º rgb(255,64,0)</th>
-                <th class="tg-0pky">30º rgb(255,128,0)</th>
-                <th class="tg-0pky">45º rgb(255,191,0)</th>
-                </tr>
               <tr>
-                <td class="tg-0pky">60º rgb(255,255,0)</td>
-                <td class="tg-0pky">75º rgb(191,255,0)</td>
-                <td class="tg-0pky">90º rgb(128,255,0)</td>
-                <td class="tg-0pky">105º rgb(64,255,0)</td>
+                <td style="background-color: rgb(255,255,0);">60 rgb(255,255,0)</td>
+                <td style="background-color: rgb(191,255,0);">75 rgb(191,255,0)</td>
+                <td style="background-color: rgb(128,255,0);">90 rgb(128,255,0)</td>
+                <td style="background-color: rgb(64,255,0);">105 rgb(64,255,0)</td>
               </tr>
               <tr>
-                <td class="tg-0pky">120º rgb(0,255,0)</td>
-                <td class="tg-ur2n">135º rgb(0,255,64)</td>
-                <td class="tg-0pky">150º rgb(0,255,128)</td>
-                <td class="tg-0pky">165º rgb(0,255,191)</td>
+                <td style="background-color: rgb(0,255,0);">120 rgb(0,255,0)</td>
+                <td style="background-color: rgb(0,255,64);">135 rgb(0,255,64)</td>
+                <td style="background-color: rgb(0,255,128);">150 rgb(0,255,128)</td>
+                <td style="background-color: rgb(0,255,191);">165 rgb(0,255,191)</td>
               </tr>
               <tr>
-                <td class="tg-0pky">180º rgb(0,255,255)</td>
-                <td class="tg-0pky">195º rgb(0,191,255)</td>
-                <td class="tg-0pky">210º rgb(0,128,255)</td>
-                <td class="tg-0pky">225º rgb(0,64,255)</td>
+                <td style="background-color: rgb(0,255,255);">180 rgb(0,255,255)</td>
+                <td style="background-color: rgb(0,191,255);">195 rgb(0,191,255)</td>
+                <td style="background-color: rgb(0,128,255);">210 rgb(0,128,255)</td>
+                <td style="background-color: rgb(0,64,255);">225 rgb(0,64,255)</td>
               </tr>
               <tr>
-                <td class="tg-0lax">240º rgb(0,0,255)</td>
-                <td class="tg-0lax">255º rgb(64,0,255)</td>
-                <td class="tg-0lax">270º rgb(128,0,255)</td>
-                <td class="tg-0lax">285º rgb(191,0,255)</td>
+                <td style="background-color: rgb(0,0,255);">240 rgb(0,0,255)</td>
+                <td style="background-color: rgb(64,0,255);">255 rgb(64,0,255)</td>
+                <td style="background-color: rgb(128,0,255);">270 rgb(128,0,255)</td>
+                <td style="background-color: rgb(191,0,255);">285 rgb(191,0,255)</td>
               </tr>
               <tr>
-                <td class="tg-0lax">300º rgb(255,0,255)</td>
-                <td class="tg-0lax">315º rgb(255,0,191)</td>
-                <td class="tg-0lax">330º rgb(255,0,128)</td>
-                <td class="tg-vh12">345º rgb(255,0,64)</td>
+                <td style="background-color: rgb(255,0,255);">300 rgb(255,0,255)</td>
+                <td style="background-color: rgb(255,0,191);">315 rgb(255,0,191)</td>
+                <td style="background-color: rgb(255,0,128);">330 rgb(255,0,128)</td>
+                <td style="background-color: rgb(255,0,64);">345 rgb(255,0,64)</td>
               </tr>
             </tbody>
-            </table></hgroup>
+            </table>
+        </hgroup>
+        <hgroup>
+          <h2>Lista con estilo dinamico</h2>
+          <ul>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+            <li>Cuarto</li>
+            <li>Quinto</li>
+          </ul>
+        </hgroup>
+
     </body>
 </html>

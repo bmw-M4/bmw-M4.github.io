@@ -1,130 +1,107 @@
-<!--
-    Nombre: García Torres Luis Felipe
-    Materia: Programacion Web 1
-    
-    Descripcion:
--->
 <!DOCTYPE html>
-<html>
+<!--
+    Nombre:García Torres Luis Felipe
+    Materia: Programacion web 1
+    Fecha: 14/03/23
+    Descripcion: Etiquetas Multimedia
+-->
+<html lang="es">
     <head>
+        <title>Unidad 02 - ejercicio 03</title>
         <meta charset="utf-8">
         <meta name="author" content="García Torres Luis Felipe">
-        <meta name="revised" content="">
-        <meta name="description" content="forms, button, input, select, datalist, textarea, ">
+        <meta name="revised" content="Martes 14 de Marzo de 2023">
+        <meta name="description" content="audio, video, source, iframe, address, small, cite, blockquote, time, sub, sup, var, kbd, code, samp, pre">
     </head>
     <body>
         <hgroup>
             <h1>Etiquetas multimedia</h1>
-            <video>
-                <source src="multimedia">
+            <video controls loop >
+                <source src="Multimedia/flower.webm">
             </video>
+            <video controls autoplay>
+                <source src="Multimedia/movie.mp4">
+                <source src="Multimedia/movie.ogv">
+            </video>
+            <video controls autoplay>
+                <source src="Multimedia/friday.mp4">
+                <track src="Multimedia/friday.vtt">
+                <track src="Multimedia/friday.vtt" kind="subtitles" srclang="en" label="English">
+                <track src="Multimedia/friday.vtt" kind="subtitulos" srclang="es" label="Español">
+            </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_N8hFAccfD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </hgroup>
         <hgroup>
-            <h2>Wikipedia</h2>
-            <iframe height="600" width="800" src="https://www.wikipedia.org/" frameborder="0"></iframe>
-            <iframe src="https://www.youtube.com/?gl=ES" frameborder="0"></iframe>
-            <!--
-                Youtube
-                Facebook
-                Twitter
-                Instagram
-            -->
+            <h1>UPSLP</h1>
+            <iframe height="600px" width="800px" src="https://es.wikipedia.org/wiki/Wikipedia:Portada"></iframe>
+            <h2>YouTube</h2>
+            <iframe height="550px" width="315px" src="https://www.youtube.com/embed/_N8hFAccfD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            <h3></h3>
         </hgroup>
         <hgroup>
+            <h1>Programacion web</h1>
+            <iframe height="600px" width="800px" src="file:///C:/Users/181591/Desktop/Parcial%202/ejercicio_u2_02.html"></iframe>
+        </hgroup>
+        <hgroup>
+            <h2>UPSLP</h2>
+           <ul>
+                <li>Aspirantes <a href="#1"><sup>[1]</sup></a></li>
+                <li>Alumnos<a href="#2"><sup>[2]</sup></a></li>
+                <li>Docentes<a href="#3"><sup>[3]</sup></a></li>
+                <li>Administracion<a href="#4"><sup>[4]</sup></a></li>
+           </ul>
             <h1>Etiquetas para contenido especifico</h1>
-            Parrafo: <p>Urbano Villalon No 500 Col. La Ladrillera C.P.78363 - San luis Potosi,Mexico</p>
-            Direccion: <br><address>Urbano Villalon No 500 Col. La Ladrillera C.P.78363 - San luis Potosi,Mexico</address>
-            Pequeño: <br><small>Urbano Villalon No 500 Col. La Ladrillera C.P.78363 - San luis Potosi,Mexico</small>
-            <br> Cita: <br><cite>Urbano Villalon No 500 Col. La Ladrillera C.P.78363 - San luis Potosi,Mexico</cite> 
-            <br> Bloque: <blockquote>Urbano Villalon No 500 Col. La Ladrillera C.P.78363 - San luis Potosi,Mexico</blockquote>
+           Parrafo: <br><p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 Conmutador: (444) 870 - 21 - 00 Atención Politécnica: politecnica@upslp.edu.mx</p>
+           Direccion: <br><address>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 Conmutador: (444) 870 - 21 - 00 Atención Politécnica: politecnica@upslp.edu.mx</address>
+           Pequeño:  <br><small>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 Conmutador: (444) 870 - 21 - 00 Atención Politécnica: politecnica@upslp.edu.mx</small>
+           <br>Cita:  <br><cite>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula viverra congue. Donec ullamcorper feugiat semper. Maecenas non accumsan tortor. Etiam a nisl vitae odio tempus lobortis. Suspendisse a malesuada dui, et imperdiet nisl. Nunc a nunc libero. Phasellus venenatis pulvinar turpis, at volutpat diam varius id. Ut mattis, arcu semper suscipit aliquet, urna velit cursus nibh, ac sollicitudin libero neque eget tellus. Praesent aliquet laoreet mi vel interdum.</cite>
+           <br>Bloque: <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula viverra congue. Donec ullamcorper feugiat semper. Maecenas non accumsan tortor. Etiam a nisl vitae odio tempus lobortis. Suspendisse a malesuada dui, et imperdiet nisl. Nunc a nunc libero. Phasellus venenatis pulvinar turpis, at volutpat diam varius id. Ut mattis, arcu semper suscipit aliquet, urna velit cursus nibh, ac sollicitudin libero neque eget tellus. Praesent aliquet laoreet mi vel interdum.</blockquote>
+           Resaltado:  <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula viverra congue. Donec ullamcorper feugiat semper. Maecenas non accumsan tortor. Etiam a nisl vitae odio tempus lobortis. Suspendisse a malesuada dui, et imperdiet nisl. <mark>Nunc a nunc libero. Phasellus venenatis pulvinar turpis, at volutpat diam varius id.</mark> Ut mattis, arcu semper suscipit aliquet, urna velit cursus nibh, ac sollicitudin libero neque eget tellus. Praesent aliquet laoreet mi vel interdum.
+           <br> Fecha: <br><cite>Lunes 13 de Marzo de 2023 <time>2023-03-13</time></cite>
 
-            <h2>Ejemplos</h2>
-            <cite>Aenean pharetra ullamcorper nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque arcu nisi, placerat ac bibendum a, consequat id urna. Nullam elementum efficitur arcu quis lacinia. Aliquam sollicitudin sapien nisl, dictum mattis erat eleifend sit amet. Nam quis mauris vitae massa porttitor egestas. Vivamus pretium eros id iaculis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, leo eget aliquet dictum, leo elit facilisis tellus, id sagittis elit neque sit amet nulla. Nam et nunc non sapien luctus lacinia ac sit amet leo. Sed euismod turpis nec vulputate bibendum. Mauris in euismod sapien. Ut sollicitudin fringilla tristique. Sed blandit metus a velit sagittis feugiat. Duis vulputate ullamcorper diam. Ut non quam sodales, dictum lacus ac, efficitur arcu.</cite>
-            <blockquote>Aenean pharetra ullamcorper nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque arcu nisi, placerat ac bibendum a, consequat id urna. Nullam elementum efficitur arcu quis lacinia. Aliquam sollicitudin sapien nisl, dictum mattis erat eleifend sit amet. Nam quis mauris vitae massa porttitor egestas. Vivamus pretium eros id iaculis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, leo eget aliquet dictum, leo elit facilisis tellus, id sagittis elit neque sit amet nulla. Nam et nunc non sapien luctus lacinia ac sit amet leo. Sed euismod turpis nec vulputate bibendum. Mauris in euismod sapien. Ut sollicitudin fringilla tristique. Sed blandit metus a velit sagittis feugiat. Duis vulputate ullamcorper diam. Ut non quam sodales, dictum lacus ac, efficitur arcu.</blockquote>
-            <blockquote>Aenean pharetra ullamcorper nibh. Pellentesque habitant morbi tristique <mark> senectus et netus et malesuada fames ac turpis egestas. Quisque arcu nisi, placerat ac bibendum a, consequat id urna. Nullam elementum efficitur arcu quis lacinia. Aliquam sollicitudin sapien nisl, dictum mattis erat eleifend sit amet. Nam quis mauris vitae massa</mark> porttitor egestas. Vivamus pretium eros id iaculis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium, leo eget aliquet dictum, leo elit facilisis tellus, id sagittis elit neque sit amet nulla. Nam et nunc non sapien luctus lacinia ac sit amet leo. Sed euismod turpis nec vulputate bibendum. Mauris in euismod sapien. Ut sollicitudin fringilla tristique. Sed blandit metus a velit sagittis feugiat. Duis vulputate ullamcorper diam. Ut non quam sodales, dictum lacus ac, efficitur arcu.</blockquote>
+           Universidad Politecnica de San Luis Potosi<sup>UPSLP</sup><br>
+           Universidad Politecnica de San Luis Potosi<sub>UPSLP</sub>
 
-            Materia: <small>Programacion web I</small>
-            <br>Grupo: <small>T10C</small>
-            <br>Horarios:
-            <ul>
-                <li>Lunes <time>12:00</time> a <time>12:55</time> </li>
-                <li>Martes<time>12:00</time> a <time>12:55</time></li>
-                <li>Miercoles<time>12:00</time> a <time>12:55</time></li>
-                <li>Jueves<time>12:00</time> a <time>12:55</time></li>
-                <li>Viernes<time>12:00</time> a <time>12:55</time></li>
-            </ul>
-            <h3>Referencias</h3>
-            <ul>
-                <li>Aspirantes<a href="#1"><sup>[1]</sup></a></li>
-                <li>Alumnos</li><a href="#2"><sup>[2]</sup></a></li>
-                <li>Docentes</li><a href="#3"><sup>[3]</sup></a></li>
-                <li>Administrativos</li><a href="#4"><sup>[4]</sup></a></li>   
-            </ul>
-            <h3>Referencias</h3>
-            <ul>
-                <li> Aspirantes "https://www.upslp.edu.mx/upslp/?page_id=244"</li>
-                <li>Alumnos "https://www.upslp.edu.mx/upslp/?page_id=209"</li>
-                <li>Docentes "https://www.upslp.edu.mx/upslp/?page_id=231"</li>
-                <li>Administrativos "https://www.upslp.edu.mx/upslp/?page_id=236"</li>
-            </ul>
-            <h4>superindice</h4>
-            Universidad Politecnica de San luis Potosi <sup>UPSLP, 2023</sup>
-            <br>Universidad Autonoma de San luis Potosi <sup>UASLP, 2023</sup>
-            <h4>Sub indice</h4>
-            Universidad Politecnica de San luis Potosi <sub>UPSLP, 2023</sub>
-            <br> Universidad Politecnica de San luis Potosi <sub>UASLP, 2023</sub> 
-            <h2>Otros ejemplos</h2> 
-            Relatividad E=mc <sup>2</sup>
-            <br>Agua: H <sub>2</sub> O
-            <br>Glucosa: c <sub>6</sub>H <sub>12</sub> O 
-            <br>
+           
+           <h3>Referencias</h3>
 
-            <h4>Comandos</h4>
-            Copiar: <kbd>Ctrl + C</kbd>
-            <br>Pegar: <kbd>Ctrl + V</kbd>
-            <br>Cortar: <kbd>Ctrl + X</kbd>
-            <br>Deshacer: <kbd>Ctrl + Z</kbd>
-            <br>Rehacer: <kbd>Ctrl + Y</kbd>
-
-            <h4>Código</h4>
-            Hola mundo en C 
-            <br><code>#include &lt;stdio.h&gt;
-                int main(){
-                    printf("Hola mundo");
-                    return 0;
-                }
-            </code>
-            <br>Hola mundo en C++: <br>
-            <code>
-                #include&lt;iostream.h&gt;
-                using namespace std;
-                int main(){
-                    cout&lt;&lt;"Hola mundo";
-                    return 0;
-                }
-            </code>
-            <br>Ejemplo basico de <br>
-            <samp>
-                #include &lt;stdio.h&gt;
-                int main(){
-                    printf("Hola mundo");
-                    return 0;
-                }
-            </samp>
-            <br>Ejemplo basico de Lex
-            <pre>
-                %{
-                    #include &lt;stdio.h&gt;
-                %}
-
-                %%
-                stop printf("Comando STOP\n");
-                start printf("Comando START\n");
-                %%
-                int yywrap() { return 1; }
-
-                int main() { yylex{}; }
-            </pre>
+           <ol>
+             <li id="1">Aspirantes: <a  target="_blank" href="https://www.upslp.edu.mx/upslp/?page_id=244"><sub>https://www.upslp.edu.mx/upslp/?page_id=244</sub></a></li>
+                <li id="2">Alumnos: <a target="_blank" href="https://www.upslp.edu.mx/upslp/?page_id=209"><sub>https://www.upslp.edu.mx/upslp/?page_id=209</sub></a></li>
+                <li id="3">Docentes: <a  target="_blank" href="https://www.upslp.edu.mx/upslp/?page_id=231"><sub>https://www.upslp.edu.mx/upslp/?page_id=231</sub></a></li>
+                <li id="4">Administracion: <a target="_blank" href="https://www.upslp.edu.mx/upslp/?page_id=236"><sub>https://www.upslp.edu.mx/upslp/?page_id=236</sub></a></li>
+        </ol>
+        <h3>Otros Ejemplos</h3>
+        Relatividad: E=mc<sup>2</sup>
+       <br>Agua: H<sub>2</sub>O
+        <br>Glucosa: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>
+        <br>Sodio: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>1</sup>
+        <br>Variable: <var>i</var> = 25
+        <br>&nbsp;- Definicion de variables <var>x</var> = 3, <var>y</var> = 4
+        <br>Ejemplos basico de lenguaje C
+        <br><code>
+            for(int i= 0; i==0; i++){
+                printf("Hola %d",i);
+            }
+        </code>
+        <br>PHP info
+        <br><code>
+            &lt; ?php phpinfo(); ?&gt;
+        </code>
+        <br>Copiar: <kbd>ctrl + C</kbd>
+        <br>Pegar: <kbd>ctrl + V</kbd>
+        <br>Ejemplos basico de lenguaje C
+        <br><samp>
+            for(int i= 0; i==0; i++){
+                printf("Hola %d",i);
+            }
+        </samp>
+        <br>Ejemplos basico de lenguaje C
+        <br><pre>
+for(int i= 0; i==0; i++){
+    printf("Hola %d",i);
+}
+        </pre>
         </hgroup>
     </body>
 </html>

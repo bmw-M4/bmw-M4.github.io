@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+    Nombre:García Torres Luis Felipe
+    Materia: Programacion web 1
+    Fecha: 12/04/23
+    Descripcion:
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02- ejercicio 07</title>
+        <meta charset="utf-8">
+        <meta name="author" content="García Torres Luis Felipe">
+        <meta name="revised" content="">
+        <meta name="description" content="">
+        <style>
+            p{ background-color: black; color: lime;} 
+            .posX:hover { transform: translateX(25px);}
+            .posY:hover { transform: translateY(25px);}
+            .posXY:hover { transform: translate(25px, 25px);}
+            .rotX:hover {transform: rotateX(45deg);}
+            .rotY:hover {transform: rotateY(45deg);}
+            .rotZ:hover {transform: rotateZ(45deg);}
+            .sizeX:hover {transform: scalex(1.5);}
+            .sizeY:hover {transform: scaley(1.5);}
+            .sizeXY:hover {transform: scalex(0.75, 0.75);}
+            .skewX:hover {transform: skewX(30deg);}
+            .skewY:hover {transform: skewY(10deg);}
+            .skewXY:hover {transform: skew(30deg, 15deg);}
+            .mul:hover { transform: matrix(2,0,0,2,200,0);}
+            .efecto {height: 75%; font-size: 75%; transition: height 0.5s, font_size 0.5s;} 
+            .efecto:hover { height: 125%; font-size: 125%;}  
+            .rainbow { width: 100px; height: 100px; background-color: red;
+                animation-name: rgb; animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: linear;}
+            @keyframes rgb {0% { background-color: red;}
+            17% {background-color: yellow;}
+            33% {background-color: green;} 
+            50% {background-color: cyan;}
+            67% {background-color: blue;}
+            82% {background-color: magenta;}
+            98% {background-color: red;}}     
+        </style>
+    </head>
+    <body>
+        <hgroup>
+            <h1>Transform</h1>
+            <h2>Translate</h2>
+            <p>USPLP (Sin efecto)</p>
+            <p class="posX">UPSLP (translate X)</p>
+            <p class="posY">UPSLP (translate Y)</p>
+            <p class="posXY">UPSLP (translate X,Y)</p>
+        </hgroup>
+    </body>
+    <hgroup>
+        <h2>Rotate</h2>
+        <p class="rotX">UPSLP (Rotate X)</p>
+        <p class="rotY">UPSLP (Rotate Y)</p>
+        <p class="rotZ">UPSLP (Rotate Z)</p>
+    </hgroup>
+    <hgroup>
+        <h2>Scale</h2>
+        <p class="sizeX">UPSLP (Scale X)</p>
+        <p class="sizeY">UPSLP (Scale Y)</p>
+        <p class="sizeXY">UPSLP (Scale X,Y)</p>
+    </hgroup>
+    <hgroup>
+        <h2>Skew</h2>
+        <p class="skewX">UPSLP (Skew X)</p>
+        <p class="skewY">UPSLP (Skew Y)</p>
+        <p class="skewXY">UPSLP (Skew X,Y)</p>
+    </hgroup>
+    <hgroup>
+        <h2>Multiple</h2>
+        <p class="mul">UPSLP (Mover Y escalar)</p>
+        <p class="efecto">UPSLP (Mover Y escalar)</p>
+        <p class="efecto">UPSLP (Mover Y escalar)</p>
+        <p class="efecto">UPSLP (Mover Y escalar)</p>
+        <p class="efecto">UPSLP (Mover Y escalar)</p>
+    </hgroup>
+    <hgroup>
+        <h2>Transition</h2>
+        <div class="efecto"><a href="#">Menu 1</a></div>
+        <div class="efecto"><a href="#">Menu 2</a></div>
+        <div class="efecto"><a href="#">Menu 3</a></div>
+        <div class="efecto"><a href="#">Menu 4</a></div>
+        <div class="efecto"><a href="#">Menu 5</a></div>
+    </hgroup>
+    <hgroup>
+        <h2>Animation</h2>
+        <div class="rainbow"></div>
+    </hgroup>
+</html>
