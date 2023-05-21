@@ -6,16 +6,16 @@
     list-style: none; /* Eliminar puntos de las listas */
     box-sizing: border-box; /* No se salgan los elementos del contenedor */
 }
-section{
-    background: url(fondo.JPG) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-}
+
+
 nav{
     background: #E1CAC1;
     height: 80px;
     width: 100%;
+    background: url(fondo.JPG) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
 }
 
 .enlace{ /* clase del logo*/
@@ -63,14 +63,19 @@ li a.active, li a:hover{
 }
 
 
-
+/* section{
+    background: url(fondo.JPG) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+} */
 .tit{
     color: white;
     font-size: 60px;
     text-align: center;
     font-family: 'Castoro Titling', cursive;
     width: 200px;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 13px;
     
 }
