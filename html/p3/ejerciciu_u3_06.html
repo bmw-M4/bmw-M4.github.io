@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--
+ Nombre : García Torres Luis Felipe
+Materia : Programación Web 1
+Fecha :
+Descripción : Tareas Modulo 1
+ -->
+
+<html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 06</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe García Torres">
+    
+<style>
+    .Tit{ background-color: black; color: aqua;
+    }
+    
+</style>
+
+</head>
+
+<body> 
+    
+    <h1 class="Tit">JavaScript - Condicionales</h1>
+    
+    <script>
+        let varNum=prompt("Introduce el valor para jugar...","0");
+        varNum = varNum ? varNum: "0";
+        if(varNu>90 &&varNum <110){
+            alert("¡Bingo!");
+        } else{
+           alert("¡Fallaste!");
+        }
+
+
+
+        /*Tarea 2*/
+        let varRes = (varNum >90) ? ((varNum<110) ? "Loteria" : "Perdiste"): "Perdiste te falto";
+        alert(varRes); 
+
+        /*Tarea 3*/
+
+        let varNum1=prompt("Primer operando:");
+        let varNum2=prompt("Segundo operando:");
+        let varOp=prompt("Operacion:");
+
+        varNum1= Number.parseInt(varNum1, 10);
+        varNum2 = Number.parseInt(varNum2, 10);
+
+        let varres = "";
+
+        if (!Number.isNav(varNum1) && !Number.isNaN(varNum2)){
+            switch(varOp){
+                case '+': varres= "El resultado de ("+ varNum1 +" + "+varNum2 +") es: "+(varNum1+varNum2);break;
+                case '-': varres= "El resultado de ("+ varNum1 +" - "+varNum2 +") es: "+(varNum1-varNum2);break;
+                case '*': varres= "El resultado de ("+ varNum1 +" * "+varNum2 +") es: "+(varNum1*varNum2);break;
+                case '/': varres= "El resultado de ("+ varNum1 +" / "+varNum2 +") es: "+(varNum1/varNum2);break;
+                default: varres = "Operacion incorrecta...";
+            }
+        }
+        alert(varres);
+    </script>
+     
+
+</body>
+</html>

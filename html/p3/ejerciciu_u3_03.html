@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>Unidad 03 Ejercicio 3</title>
+        <style>
+            .Tit{background-color: black;color: aqua;}
+        </style>
+        <meta charset="utf-8">
+        <meta name="author" content="Cristian Michel Segovia Barco">
+        <meta name="revised" content="">
+        <meta name="description" content="forms, button, input, select, datalist, textarea, ">
+</head>
+<hgroup>
+    <body>
+        <h1 class="Tit">Tipos de datos</h1>
+
+        <script>
+            let varBoolean=Boolean(true);
+            let varNumber=Number(3.1416);
+            let varBight=BigInt(3.1416);
+            let varString=String("UPSLP");
+            let varUnderfined;
+
+            alert("varBoolean es de tipo: " + "typeof varBoolean" +"*y su valor es de:   varBoolean" +
+            "Invartiumber es de tipo: *" + "typeof varllumber" + "* y su valor es de: " + "varNumber "+
+            "InvarBigint es de tipo:   " + "typeof varBigInt" + "* y su valor es de: *" + "varBigint "+
+            "InvarString es de tipo: " + "typeof varString "+ " y su valor es de: " + "varString" +
+            "InvarUndefined es de tipo: *" + "typeof varUndefined" + "* y su valor es de: *" + "varUndefined");
+            let tempstring = String(1234);
+            let templlumber = Number (tempstring);
+            let tempBigint = BigInt (templumber);
+            let vardoolean_1 = Boolean(tempBigInt);
+            let varBoolean_2 = Boolean(Bigint (Number (String(""))));
+            alert("varBoolean 1 es de tipo: *" + "typeof varBoolean 1 "+ "* y su valor es de: * "+ "varBoolean 1 "+
+            "InvarBoolean 2 es de tipo: *" + "typeof varBoolean 2" + "* y su valor es de: *" + "varBoolean 2");
+            let datoString = String(1234) ;
+            let datollumber = Number (4321);
+            let datoBigint = BigInt (5555);
+            let datoBoolean = Boolean(5555);
+            alert ("String + Number el resultado es: *" + "typeof (datoString" + "datoNumber) "+ "InString" + "Bigint el resultado es: *" + "typeof (datoString" + "datoBigint) "+
+            "InString" + "Boolean el resultado es: " + "typeof (datoString "+ "datoBoolean)");
+            </script>
+    </body>
+</hgroup>
+
+    
+
+</html>

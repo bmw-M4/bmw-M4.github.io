@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--
+ Nombre : García Torres Luis Felipe
+Materia : Programación Web 1
+Fecha :
+Descripción : Tareas Modulo 1
+ -->
+
+<html lang="es">
+<head>
+    <title>Unidad 03-Ejercicio 05</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe García Torres">
+    
+<style>
+    .Tit{ background-color: black; color: aqua;
+    }
+    
+</style>
+
+</head>
+
+<body> 
+    
+    <h1 class="Tit">JavaScript - Operadores</h1>
+    
+
+     <script> 
+        let varAnchura = prompt("Cual es el valor de la anchura?","20");
+        let varAltura = prompt("Cual es el valor de la altura?","10");
+        let varLongitud = prompt("Cual es el valor de la longitud?","50");
+
+        let bandAncho, bandAlto, bandLargo;
+        let strMensaje = "No es valido el valor introducido para: ";
+        varAnchura = varAnchura ? true : false;
+        varAltura = varAltura ? true : false;
+        varLargo = varLongitud ? true : false;    
+
+       if (!bandAncho)
+        strMensaje +="\n - Anchura";
+        if (!bandAlto)
+        strMensaje +="\n - Altura";
+        if (!bandLargo)
+        strMensaje +="\n - Longitud";
+
+
+        if (bandAncho && bandAlto && bandLargo)
+        alert("El volumen del objeto es de: "+ (varAnchura* varAltura * varLongitud) + "unidades cubidas.");
+        else
+        alert(strMensaje);
+     </script>
+
+</body>
+</html>

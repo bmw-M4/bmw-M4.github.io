@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+    Nombre:García Torres Luis Felipe
+    Materia: Programacion web 1
+    Fecha: /05/23
+    Descripcion:
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 03 - Ejercicio 07</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Luis Felipe Garcia Torres">
+        <meta name="revised" content="Miercoles 10 de Mayo del 2023">
+        <meta name="description" content="">
+        <style> .Tit {background-color: black; color: aqua; } </style>
+    </head>
+    <body>
+        <h1 class="Tit">JavaScript - Ciclos</h1>
+        <script>
+            /*  ***Tarea No.1*** */
+            /*Ciclo for*/
+            let varNum;
+
+             for(varNum = 100 ; varNum >= 0; varNum -= 10){
+                console.log("Valor : " + varNum);
+            }
+
+            /*Ciclo do - while*/
+            varNum = 100;
+            do{
+                console.log("Valor : " + varNum);
+                varNum -= 10;
+            }while(varNum >= 0);
+
+            /*Ciclo while*/
+            varNum = 100;
+            while(varNum >= 0){
+                console.log("Valor : " + varNum);
+                varNum -= 10;
+            }
+
+            /*Ciclo for infinito*/
+            varNum = 100;
+            for(;;){
+                console.log("ForInfinito >> Valor : " + varNum);
+                if(varNum > 0){
+                    varNum -= 10;
+                }else{
+                    break;
+                }
+            }
+            /*  ***Tarea No.2*** */
+            let varValor_1 = Number(prompt("Valor inicial del ciclo: "))
+            let varValor_2 = Number(prompt("Valor final del ciclo: "));
+            let varDelta = Number(prompt("Valor del cambio (incremento/decremento): "));
+
+            let bandDec = false, bandInc = false;
+
+            if(varValor_1 > varValor_2){
+                bandDec = true; 
+            }else{
+                bandInc = true; 
+            }
+
+            if(Number.isNaN(varValor_1) || Number.isNaN(varValor_2) || Number.isNaN(varDelta)){
+                alert("Los valores deben ser numericos...");
+            }else{
+                if(varDelta > 0){
+                    for(varNum = varValor_1; ;){
+                        console.log("ForDinamico >> Valor : " + varNum);
+                        if(bandDec) {varNum -= varDelta; if(varNum >= varValor_2) continue; else break;}
+                        else { varNum += varDelta; if(varNum <= varValor_2) continue; else; break;}
+                    }
+                }
+                
+            }
+
+
+            /* *** Tarea No.6***/
+            let varNum1, varNum2, varOp, varres;
+            do{
+                let varNum1 = prompt("Primer operando:");
+                let varNum2 = prompt("Segundo operando:");
+                let varOp = prompt("Operacion:");
+
+                /*varNum1 = Number.parseInt(varNum1, 10);
+                varNum2 = Number.parseInt(varNum2, 10);*/
+
+                let varres = "";
+
+                if(!Number.isNaN(varNum1) && !Number.isNaN(varNum2)){
+                    switch (varOp) {
+                        case '+': varres = "El resultado de (" + varNum1 + " + " + varNum2 + ") es: " + (varNum1 + varNum2);break;
+                        case '-': varres = "El resultado de (" + varNum1 + " - " + varNum2 + ") es: " + (varNum1 - varNum2);break;
+                        case '*': varres = "El resultado de (" + varNum1 + " * " + varNum2 + ") es: " + (varNum1 * varNum2);break;
+                        case '/': varres = "El resultado de (" + varNum1 + " / " + varNum2 + ") es: " + (varNum1 / varNum2);break;
+                        default: varres = "Operacion incorrecta(" + varOp + ")...";
+                    }
+                }else {
+                    varres = "Los operadores deben ser valores numericos(" + varNum1 + ", " + varNum2 + " )...";
+                }
+
+                alert(varres);
+                varHistorial += "\n" + varres;
+
+                let varContinuar = confirm("Deseas realizar otra operacion?");
+            }while(varContinuar);
+            alert(varHistorial); 
+        </script>
+    </body>
+</html>
