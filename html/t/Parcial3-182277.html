@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <style>
+        .Tit{ background-color: rgb(68, 196, 174); color: rgb(0, 0, 0);
+            text-align: center;
+            height: 50px;
+    }
+        .calc {
+            width: 240px;
+            height: 430px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #3115d1;
+            text-align: center;
+            background-color: rgb(209, 204, 204);
+        }
+        .calc button {
+            width: 40px;
+            height: 60px;
+            
+            margin: 7px;
+            font-size: 18px;
+            background-color: greenyellow;
+        }
+        #result{
+            width: 220px;
+            height: 50px;
+            background-color: rgb(150, 160, 192);
+        }
+        #clear{
+            width: 220px;
+            background-color: rgb(37, 204, 190);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Tit">JavaScript Calculator</h1>
+    <br>
+    <div class="calc">
+        <input type="text" id="result" readonly>
+        <br> 
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('+')">+</button>
+        <br>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('-')">-</button>
+        <br>
+        
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('*')">*</button>
+        <br>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="appendDecimal()">.</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="appendOperator('/')">/</button>
+        <button id="clear" onclick="clearResult()">Clear All</button>
+    </div>
+
+    <script>
+        function appendNumber(number) {
+            document.getElementById('result').value += number;
+        }
+
+        function appendOperator(operator) {
+            document.getElementById('result').value += operator;
+        }
+
+        function appendDecimal() {
+            var currentResult = document.getElementById('result').value;
+            
+            if (currentResult.indexOf('.') === -1) {
+                document.getElementById('result').value += '.';
+            }
+        }
+
+        function clearResult() {
+            document.getElementById('result').value = '';
+        }
+
+        function calculateResult() {
+            var result = eval(document.getElementById('result').value);
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
